@@ -11,7 +11,7 @@ let transporter = null;
 const readHTMLFile = function (path, callback) {
   fs.readFile(path, { encoding: "utf-8" }, function (err, html) {
     if (err) {
-      callback(err);
+      console.log(err)
       throw err;
     } else {
       callback(null, html);
@@ -38,7 +38,7 @@ const sendOTP = async (data, succFun) => {
   }
 
   //calling to read html
-  readHTMLFile("./otp.html", function (err, html) {
+  readHTMLFile(__dirname + "/otp.html", function (err, html) {
     let template = handlebars.compile(html);
     let message = data.message === undefined ? "" : data.message;
     let replacements = { otp: otp, message: message };
