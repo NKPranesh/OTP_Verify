@@ -8,7 +8,7 @@ The otp sent is a random 5 digit number. The user receives the otp through email
 <h1 align="center">
 	<br>
 	<br>
-	<img width="320" src="./Example.png" alt="Example">
+	<img width="650" src="./Example.png" alt="Example">
 	<br>
 	<br>
 	<br>
