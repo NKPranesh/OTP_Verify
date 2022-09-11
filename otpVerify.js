@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const handlebars = require("handlebars");
 const fs = require("fs");
 
-//Values
+//Global Values
 let otpLength = 5;
 let userid = null;
 let transporter = null;
