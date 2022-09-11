@@ -8,7 +8,7 @@ The otp sent is a random 5 digit number. The user receives the otp through email
 <h1 align="center">
 	<br>
 	<br>
-	<img width="650" src="./Example.png" alt="Example">
+	<img width="700" src="./Example.png" alt="Example">
 	<br>
 	<br>
 	<br>
@@ -94,3 +94,22 @@ otp_verify.sendOTP(
   }
 );
 ```
+
+## Issues
+
+#### Gmail
+
+When using gmail, we need to give app password in the setupSenderEmail() function. If you find difficulty in creating an app password, follow these steps
+
+- Go to your Google account at https://myaccount.google.com/
+- Go to Security
+- In "Signing in to Google" section choose 2-Step Verification - here you have to verify yourself, in my case it was with phone number and a confirmation code send as text message. After that you will be able to enabled 2-Step Verification
+- Back to Security in "Signing in to Google" section choose App passwords
+- From the Select app drop down choose Other (Custom name) and put a name e.g. nodemailer
+- A modal dialog will appear with the password. Get that password and use it in your code.
+
+Read more about it [here](https://nodemailer.com/usage/using-gmail/)
+
+#### Hotmail/Outlook
+
+If the mail is not being sent, once check the inbox for any confirmations to be done.
