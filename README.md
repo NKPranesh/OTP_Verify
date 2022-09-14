@@ -79,7 +79,8 @@ const otp_verify = require("otp-verify");
 otp_verify.setupSenderEmail({
   service: "gmail",
   user: "example@gmail.com",
-  pass: "example",
+  //for gmail, create an app password and use it
+  pass: "app_password",
 });
 
 otp_verify.sendOTP(
