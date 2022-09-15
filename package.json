@@ -1,6 +1,6 @@
 {
   "name": "otp-verify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Module that allows nodejs to send and verify otp through user emails.",
   "main": "otpVerify.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "Verify",
     "Verification",
     "Email Verification",
-    "Email"
+    "Email",
+    "Verify otp",
+    "Email Verify",
+    "Verify Email"
   ],
   "author": "NK Pranesh, P Nischala",
   "license": "ISC",
