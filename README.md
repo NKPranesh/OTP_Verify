@@ -38,7 +38,8 @@ Key-Value pairs that can be sent in options are
 otp_verify.setupSenderEmail({
   service: "gmail",
   user: "example@gmail.com",
-  pass: "example",
+  //for gmail, create an app password and use it
+  pass: "app_password",
 });
 ```
 
